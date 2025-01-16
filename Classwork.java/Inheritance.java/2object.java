@@ -1,0 +1,25 @@
+class Parent {
+
+	Parent() {
+		System.out.println(this);
+		System.out.println("In Parent Constructor.");
+	}
+}
+
+class Child extends Parent {
+
+	Child() {
+		System.out.println(this);
+		System.out.println("In Child Constructor.");
+	}
+}
+
+class Client {
+
+	public static void main(String[] args){
+	
+		Parent obj1 = new Parent();
+		Child obj2 = new Child();
+		Parent obj3 = new Child();
+	}
+}
